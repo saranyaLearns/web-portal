@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+}
+/*----common style------*/
+:root{
+    --violet: rgb(64, 13, 122);
+    --white: white;
+    --blue: blue;
+    --pink: #EE46A5;
+    --grey: grey;
+}
+button{
+    height: 40px;
+    width: 150px;
+    background-color: var(--violet);
+    color: var(--white);
+    margin-left: 20px;
+    border: none;
+    font-size: 18px;
+}
+.container{
+
+}
+section{
+    height: 98%;
+    width: 100%;
+}
+.content{
+    padding-top: 55px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    width: 100%;
+    color: var(--violet);
+    position: fixed;
+    border-bottom: 0.1px solid var(--grey);
+    background-color: var(--blue);
+    z-index: 2;
+}
+.logo{
+    width: 25%;
+}
+.logo h1{
+    font-size: 1.4em;
+    line-height: 50px;
+    padding-left: 6px;
+    color: var(--white);
+}
+.menu{
+    display: flex;
+    width: 75%;
+    background-color: var(--blue);
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu ul li{
+    list-style-type: none;
+   
+}
+
+.menu ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+  
+}
+.menu ul li a:hover{
+    color: #EE46A5;
+}
+
+.header button{
+    height: 40px;
+    width: 150px;
+    background-color: var(--pink);
+    color: var(--white);
+    margin-top: 4px;
+    margin-right: 50px;
+    border: none;
+    font-size: 18px;
+}
+.header button:hover{
+    background-color: var(--white);
+    color: var(--grey);
+}
+/*-------------home section-------------*/
+#home{
+
+}
+#home .content{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.home-message{
+  
+}
+.home-message h1{
+    font-size: 3em;
+    padding-left: 0.5em;
+    
+}
+.home-message h1{
+    color: var(--blue);
+}
+.home-message h1 span{
+    color: var(--pink);
+}
+.home-message p{
+    padding: 2em 1em;
+    text-align: justify;
+    line-height: 1.5;
+}
+.home-message button:hover{
+    background-color: var(--pink);
+}
+#home .content{
+    display: flex;
+}
+.home-logo img{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+
+/*-------about section------*/
+#about{
+    
+}
+#about .content{
+    display: flex;
+    margin-top: 30px;
+}
+.about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img{
+   
+}
+.about-message h2{
+    padding: 50px 20px 10px 20px;
+    font-size: 3em;
+    color: var(--blue);
+}
+.about-message p{
+    padding: 10px 20px 10px 20px;
+    text-align: justify;
+}
+/*-------service content-----*/
+#service{
+   
+}
+#service .content{
+   
+}
+#service .content h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
+    color: var(--blue);
+    flex-grow: 1;
+}
+.business-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.business-card{
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 8px -2px 23px 12px rgba(178,98,212,0.59);
+    background-color: #dfe6e9;
+    margin-left: 20px;
+}
+.business-card h3{
+    color: var(--blue);
+}
+.business-card .icon{
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--pink);
+}
+.business-card h2{
+    text-align: center;
+    padding: 10px 0px;
+}
+.business-card p{
+    text-align: justify;
+    color: black
+}
+.business-card h3{
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+.business-card h3 span{
+    padding-right: 3px;
+    color: var(--blue);
+}
+
+/*-----pricing plan-----*/
+#pricing{
+    margin-top: 120px;
+}
+#pricing .content h2{
+    text-align: center;
+    font-size: 3em;
+    padding: 20px;
+    color: var(--blue);
+}
+.business-plan-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.business-plan{
+    margin: 50px 50px;  
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, #FFA9D9, #EE46A5);
+    color: var(--white);
+}
+.business-plan .price{
+    text-align: center;
+    height: 100px;
+    width: 230px;
+    background-color: var(--pink);
+    clip-path: circle(48% at 48% 0);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    z-index: 1;
+}
+.business-plan .price h2{
+    padding-top: 20px;
+}
+.business-plan .plan-name{
+    margin-top: 10px;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px 10px 5px 10px;
+}
+li p{
+    text-align: center;
+}
+.business-plan li p span{
+   padding-right: 4px;
+}
+
+.business-plan button{
+    height: 40px;
+    width: 100px;
+    background-color: var(--white);
+    color: var(--grey);
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+/*-----contact-------*/
+#contact{
+   
+}
+#contact .content{
+    margin-bottom: 150px;
+}
+#contact .content h2{
+    color: var(--blue);
+    font-size: 3em;
+   
+    text-align: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.address{
+    height: 318px;
+    width: 300px;
+    background-image: linear-gradient(to bottom, #EE46A5,#378EFF);
+    color: var(--white);
+    /* clip-path: circle(50% at 48% 0); */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 8px 8px 5px rgba(0, 0, 0, 0.2), 0 8px 20px 5px rgba(0, 0, 0, 0.19);
+}
+.address h3{
+    text-align: center;
+}
+.address li p{
+    text-align: justify;
+}
+.info .data-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 5px; 
+    grid-row-gap: 3px;
+    
+}
+.info{
+    padding: 38px 0px;
+    width: 500px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 8px 20px 5px rgba(0, 0, 0, 0.19);
+}
+.info .data-1 .field{
+    margin: 0px;
+}
+.info .data-1 input[type="text"]{
+    height: 24px;
+    width: 200px;
+}
+.info .data-2 textarea{
+    width: 410px;
+    margin: 5px;
+}
+.info .data-2 button{
+    height: 40px;
+    width: 410px;
+    margin: 5px;
+    background-image: linear-gradient(to right, #EE46A5,#378EFF);
+}
+
+/*----testing-----*/
+.address,.info{
+    border: 1px solid wheat;
+}
+
+.btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 30px;
+    height: 22px;
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+/*-----------media queries----------*/
+@media screen and (max-width: 847px) {
+    .logo h1{
+        font-size: 1em;
+        font-weight: bold;
+    } 
+}
+@media screen and (max-width: 780px) {
+    #home .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #about .content{
+        display: flex;
+        flex-direction: column;
+    }
+    #pricing .business-plan{
+        margin: 25px 5px;
+    }
+    .business-card{
+        margin-left: 3px;
+    }
+}
+
+@media screen and (max-width:780px){
+    .menu{
+        display: none; 
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .contact{
+        display: none; 
+    }
+    .btn{
+        display: flex;
+    }
+    .header{
+        flex-direction: column;
+        align-items: flex-start;   
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu ul li a{
+        text-align: center;
+        
+    }
+    .menu.active{
+        display: flex;
+    }
+    
+
+}
+
+@media screen and (max-width:768px){
+    .home-message h1{
+        font-size: 3em;   
+    } 
+    .home-logo img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #about .about-message h2{ 
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+
+ @media screen and (max-width:716px){
+    #home .content{
+        display: flex;
+        flex-direction: column;
+    }
+    #about .content{
+        display: flex;
+        flex-direction: column;
+    }
+    #service .business-card-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .business-card{
+        margin: 15px 10px;
+        width: 300px;
+    }
+    #pricing .business-plan-container{
+        display: flex;
+        flex-direction: column;
+    }
+} 
+@media screen and (max-width:680px){
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .address{
+        width: 300px;
+        background-image: linear-gradient(to bottom, #EE46A5,#378EFF);
+        color: var(--white);
+        /* clip-path: circle(50% at 48% 0); */
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        box-shadow: 0 8px 8px 5px rgba(0, 0, 0, 0.2), 0 8px 20px 5px rgba(0, 0, 0, 0.19);
+    }
+    .address h3{
+        text-align: center;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info{
+        padding: 10px 0px;
+        width: 300px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 8px 20px 5px rgba(0, 0, 0, 0.19);
+    }
+    .info .data-1{
+        display: block;
+    }
+    .info .data-2 .field label{
+        width: 200px;
+        margin-left: 10px;
+    }
+    .info .data-2 .field textarea{
+        width: 200px;
+        margin-left: 10px;
+    }
+    .info .data-2 .field button{
+        height: 40px;
+        width: 200px;
+        margin-left: 10px;
+        background-image: linear-gradient(to right, #EE46A5,#378EFF);
+    }
+}
+@media screen and (max-width:487px){
+    .logo h1{
+        font-size: 1em;
+    }
+    #about .about-message h2{
+        font-size: 2.5em;
+    }
+}
+
+
+
+
